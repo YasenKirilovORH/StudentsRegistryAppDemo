@@ -12,5 +12,7 @@ suite('Home page', function() {
     let res = await fetch("http://localhost:8888/");
     let body = await res.text();
     assert.ok(body.includes("Registered students: <b>2</b>"));
+
+    //comment to try that pipeline is working with jenkins and triggers after this commit
   });
 });
